@@ -1,0 +1,127 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+
+/* Global Reset & Base */
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-display {
+    font-family: 'Cinzel', serif;
+}
+
+.font-sans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Utility Classes */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* --- ANIMATIONS --- */
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); } 
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+/* Fade Up */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Float */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Bounce Slow */
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce-slow {
+  animation: bounceSlow 3s infinite ease-in-out;
+}
+
+/* --- FUEL YOUR FUTURE INTRO ANIMATIONS --- */
+
+/* 1. Fuel Gauge Fill (0s -> 2s) */
+@keyframes fillFuel {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+.fuel-fill-bar {
+    animation: fillFuel 2s ease-in-out forwards;
+}
+
+/* 2. Fuel Text Disappear */
+@keyframes fadeOutFuel {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.intro-stage-1 {
+    animation: fadeOutFuel 0.5s ease-out forwards;
+    animation-delay: 2.5s;
+}
+
+/* 3. Car Rev & Accelerate Away (2s -> 3s) */
+@keyframes carAccelerate {
+    0% { transform: translateX(0) scale(1); }
+    15% { transform: translateX(-10px) scale(0.95); } /* Engine Rev Back */
+    40% { transform: translateX(50px) scale(1.05) skewX(-10deg); } /* Initial burst */
+    100% { transform: translateX(200vw) scale(1.1) skewX(-20deg); } /* Gone */
+}
+.car-object {
+    animation: carAccelerate 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+    animation-delay: 2s; /* Waits for fuel to fill */
+}
+
+/* 4. Text Reveal (3s -> ) */
+@keyframes neonTextReveal {
+    0% { opacity: 0; transform: scale(0.8); filter: blur(10px); }
+    100% { opacity: 1; transform: scale(1); filter: blur(0px); }
+}
+.intro-stage-2 {
+    animation: neonTextReveal 0.8s ease-out forwards;
+    animation-delay: 3s; /* After car leaves */
+}
+
+/* 5. Overlay Fade Out (5.5s) */
+@keyframes overlayFade {
+    0% { opacity: 1; visibility: visible; }
+    99% { opacity: 0; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+.intro-container-fade {
+    animation: overlayFade 0.8s ease-in-out forwards;
+    animation-delay: 5.5s; /* Allow text to be read */
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register 2026 | IBA Career Fair</title>
+    <meta name="description" content="Fuel Your Future. Register for IBA Career Fair 2026." />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['DM Sans', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              display: ['Cinzel', 'serif'],
+            },
+            colors: {
+              iba: {
+                red: '#ff0000',       // Neon Red
+                dark: '#800000',      // Deep Red
+                gold: '#fbbf24',      // Bright Gold
+                neon: '#ff3333',      // High Vis Red
+              }
+            },
+            animation: {
+                'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        body { background-color: #030712; color: white; }
+        .neon-text { text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); }
+        .glass-panel { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+  </head>
+  <body class="min-h-screen font-sans overflow-x-hidden selection:bg-iba-neon selection:text-white">
+    
+    <!-- INTRO ANIMATION OVERLAY -->
+    <div id="intro-overlay" class="fixed inset-0 z-[100] bg-gray-950 flex flex-col items-center justify-center intro-container-fade">
+        <div class="relative w-full max-w-2xl text-center p-8">
+            
+            <!-- STAGE 1: Fueling & Acceleration -->
+            <div class="intro-stage-1 absolute inset-0 flex flex-col items-center justify-center -translate-y-10">
+                <div class="flex items-end gap-2 mb-8">
+                    <!-- Fuel Pump -->
+                    <div class="text-gray-600 relative fuel-pump-anim">
+                        <i data-lucide="fuel" class="w-16 h-16"></i>
+                    </div>
+                    <!-- Connection Hose (CSS drawn) -->
+                    <div class="w-12 h-1 bg-gray-700 mb-4 rounded-full origin-left fuel-hose-anim"></div>
+                    <!-- Car -->
+                    <div class="text-white relative z-10 car-object">
+                        <i data-lucide="car-front" class="w-32 h-32 text-red-600 fill-red-900/50 drop-shadow-[0_0_15px_rgba(255,0,0,0.5)]"></i>
+                        <!-- Engine Glow -->
+                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-20 h-6 bg-red-500/40 blur-xl rounded-full animate-pulse-fast"></div>
+                    </div>
+                </div>
+                
+                <!-- Fuel Bar -->
+                <div class="w-80 max-w-full h-2 bg-gray-800 rounded-full mx-auto overflow-hidden relative border border-gray-700 fuel-bar-container">
+                    <div class="h-full bg-gradient-to-r from-red-900 via-red-500 to-yellow-400 fuel-fill-bar"></div>
+                </div>
+                <p class="text-red-500 text-xs font-display tracking-[0.5em] mt-4 uppercase animate-pulse fuel-text">Refueling System...</p>
+            </div>
+
+            <!-- STAGE 2: Welcome Text -->
+            <div class="intro-stage-2 opacity-0 absolute inset-0 flex items-center justify-center">
+                <div class="space-y-4">
+                    <p class="text-white/60 text-sm tracking-[0.5em] uppercase font-light">Prepare for Launch</p>
+                    <h1 class="text-4xl md:text-6xl font-display font-black text-white italic drop-shadow-[0_0_30px_rgba(220,38,38,0.8)]">
+                        WELCOME TO <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">CAREER FAIR 2026</span>
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-black/80 backdrop-blur-md border-b border-white/10 py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          
+          <a href="index.html" class="flex-shrink-0 flex items-center gap-3 group cursor-pointer">
+            <div class="w-10 h-10 rounded-md flex items-center justify-center font-black text-lg bg-gradient-to-br from-red-600 to-red-900 text-white shadow-[0_0_15px_rgba(255,0,0,0.5)]">
+              IBA
+            </div>
+            <div class="flex flex-col">
+              <span class="font-bold text-white leading-none tracking-widest font-display">CAREER FAIR</span>
+              <span class="text-xs font-bold text-iba-neon uppercase tracking-[0.2em]">2026 Registration</span>
+            </div>
+          </a>
+          
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="index.html" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Home</a>
+            <a href="#stats" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Statistics</a>
+            <a href="#packages" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Packages</a>
+            <a href="#contact" class="bg-iba-red text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-red-600 transition-all shadow-[0_0_20px_rgba(255,0,0,0.4)]">
+              Download Proposal
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Wrapper -->
+    <div class="pt-24 pb-20">
+        
+        <!-- Hero Header -->
+        <section class="py-16 text-center px-4 relative overflow-hidden">
+            <!-- Background effects -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+            
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-red-500/30 bg-red-500/10 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-iba-neon animate-pulse"></span>
+                    <span class="text-xs font-bold text-red-300 tracking-widest uppercase">Registration Open</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-display font-black text-white mb-6 tracking-tight drop-shadow-2xl italic">
+                    FUEL YOUR <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">FUTURE</span>
+                </h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto font-light">
+                    Accelerate your recruitment drive. Connect with the best minds. <br>Join the race for talent at IBA Career Fair 2026.
+                </p>
+            </div>
+        </section>
+
+        <!-- Dynamic Stats Section -->
+        <section id="stats" class="py-16 relative">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- Dashboard Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                
+                <!-- Speedometer (Footfall) - Spans 2 cols on Large -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 relative group">
+                    <div id="speedometer-container" class="glass-panel rounded-3xl p-8 h-full min-h-[350px] flex flex-col items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-red-900/10"></div>
+                        
+                        <!-- Speedometer SVG -->
+                        <div class="relative w-full max-w-[400px] aspect-[16/9] flex items-center justify-center">
+                            <svg height="100%" width="100%" viewBox="0 0 200 120" class="overflow-visible">
+                                <defs>
+                                    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stopColor="#333" />
+                                        <stop offset="100%" stopColor="#ff0000" />
+                                    </linearGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <!-- Track -->
+                                <path d="M 20 100 A 80 80 0 1 1 180 100" fill="none" stroke="#1f2937" stroke-width="12" stroke-linecap="round"/>
+                                <!-- Progress -->
+                                <path id="speedometer-progress" d="M 20 100 A 80 80 0 1 1 180 100" fill="none" stroke="#ff0000" stroke-width="12" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="251" filter="url(#glow)" class="transition-all duration-[2000ms] ease-out"/>
+                                
+                                <!-- Needle -->
+                                <g id="speedometer-needle" transform="translate(100, 100) rotate(-180)">
+                                    <path d="M -2 0 L 0 -75 L 2 0 Z" fill="#fff" />
+                                    <circle cx="0" cy="0" r="4" fill="#ff0000" />
+                                </g>
+                                
+                                <!-- Labels -->
+                                <text x="15" y="115" font-size="8" fill="#666">0</text>
+                                <text x="175" y="115" font-size="8" fill="#666">5000+</text>
+                            </svg>
+                            
+                            <!-- Digital Counter -->
+                            <div class="absolute bottom-0 flex flex-col items-center">
+                                <span class="text-6xl font-black text-white tabular-nums tracking-tighter drop-shadow-[0_0_10px_rgba(255,0,0,0.8)]">
+                                    <span id="speedometer-value">0</span>
+                                </span>
+                                <span class="text-xs font-bold text-red-500 uppercase tracking-[0.3em] mt-2">Total Attendees</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Students Card -->
+                <div class="glass-panel rounded-3xl p-8 flex flex-col justify-center items-center text-center group hover:bg-white/5 transition-colors">
+                    <div class="w-16 h-16 rounded-full bg-red-900/30 flex items-center justify-center mb-4 border border-red-500/30 group-hover:scale-110 transition-transform">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-red-400"></i>
+                    </div>
+                    <h3 class="text-5xl font-black text-white mb-2"><span class="counter" data-target="1000">0</span>+</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest font-bold">IBA Students</p>
+                </div>
+
+                <!-- Alumni Card -->
+                <div class="glass-panel rounded-3xl p-8 flex flex-col justify-center items-center text-center group hover:bg-white/5 transition-colors">
+                     <div class="w-16 h-16 rounded-full bg-yellow-900/30 flex items-center justify-center mb-4 border border-yellow-500/30 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user-check" class="w-8 h-8 text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-5xl font-black text-white mb-2"><span class="counter" data-target="350">0</span>+</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest font-bold">IBA Alumni</p>
+                </div>
+
+                 <!-- Executives Card -->
+                 <div class="glass-panel rounded-3xl p-8 flex flex-col justify-center items-center text-center group hover:bg-white/5 transition-colors">
+                     <div class="w-16 h-16 rounded-full bg-blue-900/30 flex items-center justify-center mb-4 border border-blue-500/30 group-hover:scale-110 transition-transform">
+                        <i data-lucide="briefcase" class="w-8 h-8 text-blue-400"></i>
+                    </div>
+                    <h3 class="text-5xl font-black text-white mb-2"><span class="counter" data-target="450">0</span>+</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest font-bold">Executives</p>
+                </div>
+
+                <!-- Faculty Card -->
+                <div class="glass-panel rounded-3xl p-8 flex flex-col justify-center items-center text-center group hover:bg-white/5 transition-colors">
+                     <div class="w-16 h-16 rounded-full bg-purple-900/30 flex items-center justify-center mb-4 border border-purple-500/30 group-hover:scale-110 transition-transform">
+                        <i data-lucide="users" class="w-8 h-8 text-purple-400"></i>
+                    </div>
+                    <h3 class="text-5xl font-black text-white mb-2"><span class="counter" data-target="250">0</span>+</h3>
+                    <p class="text-sm text-gray-400 uppercase tracking-widest font-bold">Faculty & Staff</p>
+                </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Recruitment Partners Marquee -->
+        <section class="py-16 border-y border-white/10 bg-black/50 overflow-hidden relative mb-8">
+            <div class="max-w-7xl mx-auto px-4 mb-10 text-center">
+                 <span class="text-red-500 font-bold tracking-widest uppercase text-xs animate-pulse">Our Network</span>
+                 <h3 class="text-3xl font-display font-bold text-white mt-2">Recruitment Partners</h3>
+            </div>
+            
+            <div class="relative w-full flex overflow-x-hidden group">
+                <div id="recruiters-marquee" class="animate-marquee whitespace-nowrap flex items-center space-x-8 px-4">
+                    <!-- Injected via script.js -->
+                </div>
+                
+                <!-- Gradient Fade -->
+                <div class="absolute top-0 left-0 h-full w-32 bg-gradient-to-r from-gray-950 to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute top-0 right-0 h-full w-32 bg-gradient-to-l from-gray-950 to-transparent z-10 pointer-events-none"></div>
+            </div>
+        </section>
+
+        <!-- Pricing Section (Dark Mode) -->
+        <section id="packages" class="py-24 relative">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+              <span class="text-red-500 font-bold tracking-widest uppercase text-sm block mb-2">Partnership Tiers</span>
+              <h2 class="text-4xl font-display font-bold text-white mb-8">Choose Your Engine</h2>
+              
+              <div class="flex justify-center">
+                <div class="bg-white/10 p-1 rounded-full border border-white/10 inline-flex">
+                  <button id="btn-sponsors" class="px-8 py-3 rounded-full text-sm font-bold transition-all duration-300 bg-red-600 text-white shadow-[0_0_15px_rgba(220,38,38,0.5)]">Sponsorship</button>
+                  <button id="btn-booths" class="px-8 py-3 rounded-full text-sm font-bold transition-all duration-300 text-gray-400 hover:text-white">Booth Booking</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sponsors Grid -->
+            <div id="sponsors-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Platinum -->
+                <div class="relative bg-gray-900 rounded-2xl overflow-hidden flex flex-col border border-yellow-500/50 hover:shadow-[0_0_30px_rgba(234,179,8,0.2)] transition-all duration-300 scale-105 z-10">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-600"></div>
+                    <div class="p-6 bg-gradient-to-b from-gray-800 to-gray-900">
+                        <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="crown" class="w-8 h-8 text-yellow-400"></i>
+                            <span class="bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2 py-1 rounded uppercase border border-yellow-500/30">Premium</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Platinum</h3>
+                        <div class="mt-4">
+                            <span class="text-3xl font-bold text-white">PKR 3.0M</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow bg-gray-900/50">
+                        <ul class="space-y-4 text-sm text-gray-300" id="platinum-features"></ul>
+                    </div>
+                    <div class="p-6 mt-auto">
+                        <button class="w-full py-3 rounded-xl font-bold text-sm bg-yellow-500 text-black hover:bg-yellow-400 transition-colors">Select Platinum</button>
+                    </div>
+                </div>
+
+                <div id="gold-card" class="relative bg-gray-900 rounded-2xl overflow-hidden flex flex-col border border-white/10 hover:border-white/30 transition-all duration-300"></div>
+                <div id="silver-card" class="relative bg-gray-900 rounded-2xl overflow-hidden flex flex-col border border-white/10 hover:border-white/30 transition-all duration-300"></div>
+                <div id="bronze-card" class="relative bg-gray-900 rounded-2xl overflow-hidden flex flex-col border border-white/10 hover:border-white/30 transition-all duration-300"></div>
+            </div>
+
+            <!-- Booths Grid (Hidden by Default) -->
+            <div id="booths-grid" class="hidden grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                 <!-- Injected via script.js -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer (Dark) -->
+        <footer id="contact" class="border-t border-white/10 bg-black">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+             <div class="flex flex-col md:flex-row justify-between items-center mb-12 border-b border-white/10 pb-12">
+                 <div class="mb-6 md:mb-0">
+                     <h2 class="text-2xl font-bold text-white mb-2">Ready to Race?</h2>
+                     <p class="text-gray-400">Secure your position on the starting grid.</p>
+                 </div>
+                 <a href="mailto:shirazahmed@iba.edu.pk" class="bg-red-600 hover:bg-red-500 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+                     Contact Commercial Team
+                 </a>
+             </div>
+             
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm text-gray-400">
+               <div>
+                   <h4 class="font-bold text-white uppercase mb-4">Sponsorship Sales</h4>
+                   <p class="font-bold text-white">Shiraz Ahmed</p>
+                   <p class="mb-2">Assistant Manager, CDC</p>
+                   <a href="mailto:shirazahmed@iba.edu.pk" class="text-red-400 hover:text-red-300">shirazahmed@iba.edu.pk</a>
+               </div>
+               <div>
+                   <h4 class="font-bold text-white uppercase mb-4">Logistics & Booths</h4>
+                   <p class="font-bold text-white">Rukhsar Shahid</p>
+                   <p class="mb-2">Executive Assistant, CDC</p>
+                   <a href="mailto:rshahid@iba.edu.pk" class="text-red-400 hover:text-red-300">rshahid@iba.edu.pk</a>
+               </div>
+               <div class="lg:col-span-2">
+                   <p class="text-xs leading-relaxed opacity-60">
+                       This document is a proposal for invitation to treat and does not constitute a binding contract.
+                   </p>
+                   <p class="text-xs mt-4 opacity-60">&copy; 2026 IBA Career Development Center. Fuel Your Future.</p>
+               </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

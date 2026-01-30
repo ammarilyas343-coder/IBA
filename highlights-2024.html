@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Highlights 2024 | IBA Career Fair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['DM Sans', 'sans-serif'],
+                serif: ['Playfair Display', 'serif'],
+                display: ['Cinzel', 'serif'],
+              },
+              colors: {
+                iba: { 
+                    red: '#800000', 
+                    gold: '#C59D5F',
+                    dark: '#4a0000'
+                }
+              }
+            }
+          }
+        }
+    </script>
+  </head>
+  <body class="min-h-screen bg-white font-sans text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur shadow-sm py-4 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-md bg-iba-red text-white flex items-center justify-center font-display font-bold">IBA</div>
+                <span class="font-bold text-gray-900 group-hover:text-iba-red transition-colors">Career Fair</span>
+            </a>
+            <div class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-iba-red">Home</a>
+                <a href="participate.html" class="hover:text-iba-red">2026 Registration</a>
+                <a href="highlights-2025.html" class="hover:text-iba-red">2025 Highlights</a>
+                <span class="text-iba-red font-bold">2024 Highlights</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-32 pb-16 px-4 bg-gray-50 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-iba-red to-iba-gold"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="text-iba-red font-display font-bold tracking-[0.2em] text-sm uppercase">Throwback</span>
+            <h1 class="text-5xl md:text-6xl font-serif text-gray-900 mt-4 mb-6">Career Fair 2024</h1>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                The year of resilience. Career Fair 2024 focused on digital transformation and sustainable business practices.
+                Keynote speakers included industry titans from Banking and Fintech sectors.
+            </p>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Image 1 -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg aspect-[4/3] border-2 border-transparent hover:border-iba-gold transition-all">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1000&auto=format&fit=crop" alt="2024 Crowd" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-iba-red/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <p class="text-white font-bold">Opening Ceremony</p>
+                </div>
+            </div>
+            <!-- Image 2 -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg aspect-[4/3] border-2 border-transparent hover:border-iba-gold transition-all">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1000&auto=format&fit=crop" alt="Students" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-iba-red/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <p class="text-white font-bold">Student Engagement</p>
+                </div>
+            </div>
+            <!-- Image 3 -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg aspect-[4/3] border-2 border-transparent hover:border-iba-gold transition-all">
+                <img src="https://images.unsplash.com/photo-1565514020176-db79234125b0?q=80&w=1000&auto=format&fit=crop" alt="CEO Talk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-iba-red/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <p class="text-white font-bold">CEO Talk</p>
+                </div>
+            </div>
+            <!-- Image 4 -->
+            <div class="group relative overflow-hidden rounded-xl shadow-lg aspect-[4/3] border-2 border-transparent hover:border-iba-gold transition-all">
+                <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?q=80&w=1000&auto=format&fit=crop" alt="Campus View" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-iba-red/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <p class="text-white font-bold">IBA Main Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Partner Logos Grid (Placeholder for user edits) -->
+     <section class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-serif text-gray-900 mb-8">Participating Partners 2024</h3>
+            <div class="flex flex-wrap justify-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Replace src with actual logo files -->
+                <img src="https://logo.clearbit.com/pg.com" class="h-12 object-contain" alt="Partner Logo">
+                <img src="https://logo.clearbit.com/loreal.com" class="h-12 object-contain" alt="Partner Logo">
+                <img src="https://logo.clearbit.com/shell.com" class="h-12 object-contain" alt="Partner Logo">
+                <img src="https://logo.clearbit.com/telenor.com" class="h-12 object-contain" alt="Partner Logo">
+                <img src="https://logo.clearbit.com/careem.com" class="h-12 object-contain" alt="Partner Logo">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-iba-red text-white py-12 text-center border-t border-red-900">
+        <a href="index.html" class="inline-block bg-white text-gray-900 px-6 py-3 rounded-full font-bold hover:bg-iba-gold hover:text-white transition-colors">
+            Back to Home
+        </a>
+        <p class="text-white/50 text-xs mt-8">&copy; 2024 IBA Career Development Center. Leadership - Excellence - Impact.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
